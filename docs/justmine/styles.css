@@ -1,0 +1,22 @@
+/* element selectors power 1*/
+p h2 h1 div {
+    background-color: white;
+}
+
+/* Class selectors power 2*/
+.name {
+    color:blue;
+}
+
+/* ID selector power 3*/
+#name {
+    align-items:center;
+}
+
+/* pseudoslelector */
+element :hover
+element :first-child
+element :last-child
+element :visited
+element :active
+element :link
