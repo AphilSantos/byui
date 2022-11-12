@@ -280,7 +280,6 @@ img.first-img {
 
 div.description-container {
     max-width: 40vw;
-    max-height: 100vh;
     border-style: solid;
     border-color: #000;
     padding: 20px;
@@ -295,6 +294,15 @@ div.description-container {
     padding: 10px;
     border-style: solid;
     border-color: #000;
+}
+
+.book-now-btn:hover {
+    background-color: #481620;
+    opacity: .8;
+    color: #fff;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    cursor: pointer;
 }
 
 #portfolio-testimonial {
@@ -334,7 +342,7 @@ div.description-container {
     border-style: solid;
 }
 
-.prev, .next {
+/* .prev, .next {
     cursor: pointer;
     position: absolute;
     top: 50%;
@@ -358,7 +366,7 @@ div.description-container {
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+  } */
 
   /* Fading animation */
 .fade {
