@@ -197,3 +197,8 @@ img.portrait {
   width: 240px;
   height: 300px;
 }
+
+img.wireframe {
+  width: 480px;
+  height: 100%;
+}
