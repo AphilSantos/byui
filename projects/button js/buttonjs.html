@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+ <input  type="checkbox" id="checkBox">
+<input type="button" id='button' value = "Click me" onclick="FbotonOn()">
+<p id="texto"></p>
+</body>
+</html>
+
+<script type="text/javascript">
+function FbotonOn() { 
+
+    if(document.getElementById('checkBox').checked)
+        document.getElementById('texto').innerHTML = "Thank you";
+    else
+        document.getElementById('texto').innerHTML = "Good Bye";
+}

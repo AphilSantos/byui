@@ -1,0 +1,9 @@
+.card-box {
+    max-height: 20vh;
+    max-width: 20vw;
+    box-shadow: 0 20px 0 #DE007E;
+    border: solid;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: ;
+}
