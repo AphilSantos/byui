@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+/* Header styles */
+
+.navigation, footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    background-color: #088287;
+    height: 20vh;
+}
+
+nav li {
+    display: inline;
+}
+
+ul.nav-items {
+    align-self: left !important;
+    margin-left: -40px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+li {
+    list-style-type: none;
+    font-size: large;
+    padding: 10px 10px;
+}
+
+li:hover {
+    background-color: #13585b;
+}
+
+.logo-container-header {
+    float: left;
+}
+
+.logo {
+    width: 180px;
+    height: 180px;
+}
+
+header {
+    width: 100%;
+}
+
+/* end of header styles */
+
+main {
+    min-height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 40px;
+    grid-gap: 20px;
+}
+
+.about-me-container {
+    position: relative;
+    border: solid;
+    width: 60%;
+    min-height: 40vh;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+.inside-container {
+    min-width: 35%;
+    min-height: 45%;
+    border: solid;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: Argent;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Argent;
+}
+
+h3 {
+    font-size: 25px;
+    font-family: Argent;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    font-family: Quicksand;
+}
+
+.about-me-photo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: -80px;
+    margin-left: 300px;
+}
+
+.name {
+    margin-top: -40px;
+}
+
+.offers-container {
+    margin: 40px;
+}
+
+/* page styles PROJECT  */
+
+.project-page {
+    display: block;
+}
+
+.project {
+    width: 70%;
+    margin: 70px;
+    border: solid;
+
+}
+
+.card {
+    position: relative;
+}
+
+.project-container {
+    width: 20%;
+    border: solid;
+    padding: 20px;
+    position: absolute;
+    top: 150px;
+    right: 100px;
+    background-color: white;
+}
+
+/* Contacts page styles */
+
+
+.no-text-decoration {
+    list-style-type: none;
+}
+
+#form-page {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+}
+
+div.forms {
+    margin-top: 40px;
+    grid-column: 2/3;
+}
+
+form {
+    width: 100%;
+    grid-column: 2/3;
+    text-align: left;
+    padding: 40px;
+    border: solid;
+}
+
+form {
+    /* Center the form on the page */
+    margin: 0 auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+    padding: 10px;
+    font-weight: 300;
+    background-color: #0075A2;
+    color: #fff;
+  }
+
+  button:hover{
+    cursor: pointer;
+    background-color: #007580;
+  }
+
+  #feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
+/* End of Contacts page styles */
+
+/* Footer styles */
+
+footer {
+    min-width: 100%;
+    max-height: 40vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer li {
+    display: inline;
+}
+
+.soc-lo {
+    border-radius: 50%;
+    padding: none;
+    margin: none;
+}
+
+/* end of footer styles */
