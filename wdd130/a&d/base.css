@@ -28,13 +28,13 @@ a {
     color: #fff;
 }
 
-li {
+nav li {
     list-style-type: none;
     font-size: large;
     padding: 10px 10px;
 }
 
-li:hover {
+nav li:hover {
     background-color: #13585b;
 }
 
@@ -278,8 +278,11 @@ footer li {
 
 .soc-lo {
     border-radius: 50%;
-    padding: none;
+    padding: -10px;
     margin: none;
+    width: 60px;
+    background-color: #088287;
+    border-color: #000;
 }
 
 /* end of footer styles */
