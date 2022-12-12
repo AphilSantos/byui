@@ -50,6 +50,20 @@
         width: 100%;
     }
 
+    a.portfolio-sites {
+        background-color: #007580;
+        border-color: #fff;
+        padding: 10px;
+        margin: 0 auto;
+        text-align: center;
+        align-self: center;
+        font-size: 16px;
+    }
+
+    .portfolio-sites:hover {
+        background-color: #13585b;
+    }
+
     /* end of header styles */
 
     main {
@@ -86,7 +100,7 @@
         font-family: Argent;
     }
 
-    h3 {
+    h3, a {
         font-size: 25px;
         font-family: Argent;
     }
@@ -142,9 +156,17 @@
         top: 150px;
         right: 100px;
         background-color: white;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
     }
 
     /* Contacts page styles */
+
+    .contact-heading {
+        text-align: center;
+    }
 
 
     .no-text-decoration {
@@ -282,6 +304,10 @@
         width: 60px;
         background-color: #088287;
         border-color: #000;
+    }
+
+    .footer-nav {
+        padding: 5px;
     }
 
     /* end of footer styles */
