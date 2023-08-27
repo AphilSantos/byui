@@ -10,7 +10,7 @@ password = "lhfspaztcqrewjuh"
 def send_email(recipient_name, recipient_email, subject, body_template):
     # Email setup
     msg = EmailMessage()
-    msg.set_content(body_template.replace("{name}", recipient_name).replace("{email}",recipient_email))
+    msg.set_content(body_template.replace("{name}", recipient_name).replace("{email}",recipient_email), subtype="html")
     msg["Subject"] = subject
     msg["From"] = "aaron.santos.mentor@gmail.com"
     msg["To"] = recipient_email
@@ -27,12 +27,19 @@ def send_email(recipient_name, recipient_email, subject, body_template):
 
 if __name__ == "__main__":
     subject = "Hello there!"
-    body_template = """Hello {name},
+    body_template = """
+ <html>
+ <body>   
+    <p>Hello <strong>{name},</strong><p>
+<br>
+<p>This is a test {name}. And your email address is <em>{email}.</em></p>
+<br>
+<div style="min-height: 10px; min-width: 40px; background-color: red;"></div>
+<p>Regards,<br>
+Aaron Santos</p>
 
-This is a test {name}. And your email address is {email}.
-
-Regards,
-Your Name
+</body>
+</html>
 """
     
     with open('contacts.csv', mode='r') as csv_file:
