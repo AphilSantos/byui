@@ -12,7 +12,7 @@ def send_email(recipient_name, recipient_email, subject, body_template):
     msg = EmailMessage()
     msg.set_content(body_template.replace("{name}", recipient_name).replace("{email}",recipient_email), subtype="html")
     msg["Subject"] = subject
-    msg["From"] = "aaron.santos.mentor@gmail.com"
+    msg["From"] = "BYU-Pathway Worldwide Peer Mentor"
     msg["To"] = recipient_email
 
     context = ssl.create_default_context()
@@ -26,11 +26,11 @@ def send_email(recipient_name, recipient_email, subject, body_template):
     server.quit()
 
 if __name__ == "__main__":
-    subject = "Hello there!"
+    subject = "Online Courses Starts in 7 days (September 11, 2023)"
     body_template = """
  <html>
  <body>   
-    <p>Hello <strong>{name},</strong><p>
+    <p>Hey there <strong>{name},</strong><p>
 <br>
 <p>This is a test {name}. And your email address is <em>{email}.</em></p>
 <br>
