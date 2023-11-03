@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flipbook</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f3f3;
+        }
+
+        .flipbook {
+            width: 500px;
+            height: 400px;
+            position: relative;
+            perspective: 1000px;
+        }
+
+        .page {
+            width: 50%;
+            height: 100%;
+            position: absolute;
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            transform-origin: left center;
+            backface-visibility: hidden;
+            transform-style: preserve-3d;
+            transition: transform 0.8s;
+        }
+
+        .front-left, .front-right {
+            z-index: 2;
+        }
+
+        .flipbook:hover .front-right {
+            transform: rotateY(-180deg);
+        }
+
+    </style>
+</head>
+
+<body>
+
+
+    <a href="https://www.bbb.org/ca/on/brampton/profile/pest-control/pestify-corporation-0107-1389851/#sealclick" target="_blank" rel="nofollow"><img src="https://seal-mwco.bbb.org/seals/blue-seal-81-171-bbb-1389851.png" style="border: 0;" alt="Pestify Corporation BBB Business Review" /></a>
+
+    <div class="flipbook">
+        <div class="page front-left">
+            <h2>A Jester’s Tale</h2>
+            <p>By Riley Gilmore</p>
+            <p>Jinx sat huddled in a dark corner of a cold, dank dungeon, imprisoned in the most feared 
+            bowels of Malmoral Castle for what now seemed like eons. Her black clothes, caked in 
+            sweat and dirt, hung loosely on her frail body. Her long, raven black hair fell in greasy 
+            strands along the length of her back and cascaded over her face, blessedly obscuring the 
+            dismal view of her surroundings. Her mesmerizing gray eyes now glistened with ever-present tears, where once upon a time they sparkled with joy.</p>
+        </div>
+        <div class="page front-right">
+            <p>She had no real sense of time 
+            anymore, but somehow instinctively knew that the sun would be up soon and would cast 
+            shards of light through the cracks in the wall near the ceiling. She lived to see that small 
+            glimpse of the outside world, cursing cloudy days that denied her that one small pleasure. 
+            Sadly, the arrival of the dawn also brought with it the certainty that he would soon appear, 
+            as he had done every morning since her capture.</p>
+        </div>
+        <div class="page back-left">
+            <p>Her reverie was abruptly interrupted by the sound of heavy footsteps coming closer and 
+            closer. Her captor, Captain of the Guard Jean LaSalle, was approaching as expected. He 
+            knocked three times on the massive wooden dungeon door, not out of any kind of courtesy 
+            or respect for Jinx, but as a way of frightening the various rats with which she shared her 
+            living quarters into scattering away in a frenzy. The door slowly opened on squeaky hinges, 
+            LaSalle no longer even bothering to lock it after himself upon leaving her each day as Jinx 
+            hadn’t had the energy to stand, let alone attempt an escape, for some months now.</p>
+        </div>
+        <div class="page back-right">
+            <p>Eager eyes held wide, Jinx slowly raised her face to meet the meager rays of sunshine as 
+            they fought to enlighten her cell, basking her in images of days long gone when she was 
+            free, loved, and happy. She taunted herself with memories of delicious meals shared with 
+            family, lively jousting tournaments, the handsome smile of the man she loved, and the 
+            cherished friends she would die to protect…</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

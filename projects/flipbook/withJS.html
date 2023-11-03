@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Jester's Tale</title>
+</head>
+<body>
+    <div class="book">
+        <div class="page" id="page1">A Jester’s Tale<br>By Riley Gilmor<p>Jinx sat huddled in a dark corner of a cold, dank dungeon, imprisoned in the most feared 
+            bowels of Malmoral Castle for what now seemed like eons. Her black clothes, caked in 
+            sweat and dirt, hung loosely on her frail body. Her long, raven black hair fell in greasy 
+            strands along the length of her back and cascaded over her face, blessedly obscuring the 
+            dismal view of her surroundings. Her mesmerizing gray eyes now glistened with everpresent tears, where once upon a time they sparkled with joy. She had no real sense of time 
+            anymore, but somehow instinctively knew that the sun would be up soon and would cast 
+            shards of light through the cracks in the wall near the ceiling. She lived to see that small 
+            </p></div>
+        <div class="page" id="page2"><p>glimpse of the outside world, cursing cloudy days that denied her that one small pleasure. 
+            Sadly, the arrival of the dawn also brought with it the certainty that he would soon appear, 
+            as he had done every morning since her capture.</p>
+        <p>
+            Eager eyes held wide, Jinx slowly raised her face to meet the meager rays of sunshine as 
+they fought to enlighten her cell, basking her in images of days long gone when she was 
+free, loved, and happy. She taunted herself with memories of delicious meals shared with 
+family, lively jousting tournaments, the handsome smile of the man she loved, and the 
+cherished friends she would die to protect…
+
+        </p></div>
+        <div class="page" id="page3">Eager eyes held wide...</div>
+        <div class="page" id="page4">Her reverie was abruptly interrupted...</div>
+        <div class="page" id="page5">This once impressive specimen of a man...</div>
+    </div>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.book {
+    perspective: 1000px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    padding: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    transform: rotateY(0deg);
+}
+
+
+
+
+.page:nth-child(1) { z-index: 5; }
+.page:nth-child(2) { z-index: 4; }
+.page:nth-child(3) { z-index: 3; }
+.page:nth-child(4) { z-index: 2; }
+.page:nth-child(5) { z-index: 1; }
+
+
+
+
+
+
+</style>
+
+    <script>
+const pages = document.querySelectorAll('.page');
+
+let lastFlippedIndex = null; 
+
+pages.forEach((page, index) => {
+    page.addEventListener('click', () => {
+        if (page.style.transform !== 'rotateY(-180deg)') {
+            page.style.transform = 'rotateY(-180deg)';
+            lastFlippedIndex = index;
+            pages.forEach((innerPage, innerIndex) => {
+                if (innerIndex === index) {
+                    innerPage.style.zIndex = '10';  // Bring the flipped page to the top
+                } else if (innerIndex < index) {
+                    innerPage.style.zIndex = `${5 - innerIndex}`;  // Stack the previous pages below
+                } else {
+                    innerPage.style.zIndex = `${5 + innerIndex}`;  // Keep the subsequent pages above
+                }
+            });
+        } else {
+            page.style.transform = 'rotateY(0deg)';
+            // Reset the z-index based on their initial order
+            pages.forEach((innerPage, innerIndex) => {
+                if (innerIndex === lastFlippedIndex) {
+                    innerPage.style.zIndex = `${5 - innerIndex}`;
+                } else {
+                    innerPage.style.zIndex = `${5 - innerIndex}`;  
+                }
+            });
+            lastFlippedIndex = null;
+        }
+    });
+});
+
+
+    </script>
+</body>
+</html>
