@@ -81,7 +81,7 @@ with col1:
     if st.button('Preview Email'):
         # Using an expander to simulate a modal dialog
         with st.expander("Email Preview", expanded=True):
-            components.html(st.session_state.body_template, height=1200)
+            components.html(st.session_state.body_template, height=3200)
     email_ad = st.text_input("Email Address", type="default")        
     password = st.text_input("Email Password", type="password")
 
@@ -174,7 +174,7 @@ with preview_area:
     # If the body_template is not empty, render it
     if st.session_state.body_template:
         # Directly render HTML with components.html
-        components.html(st.session_state.body_template, height=1200)
+        components.html(st.session_state.body_template, height=3200)
 
     # Render the email template as HTML
     for element in st.session_state.email_elements:
