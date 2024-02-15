@@ -27,40 +27,42 @@ def send_email(recipient_name, recipient_email, subject, body_template):
     server.quit()
 
 if __name__ == "__main__":
-    subject = "What can I pray for on your behalf?"
+    subject = "Have you decided on a Certificate?"
     body_template = """
 <html>
 <head>
 </head>
 <body style="font-family: Arial, sans-serif; background-color: #f4f4f4; padding: 20px; color: #333;">
     <div style="max-width: 600px; background-color: #fff; padding: 20px; border-radius: 8px; margin: auto;">
-        <div style="font-size: 20px; font-weight: bold; margin-bottom: 15px;">Good day {name}!</div>
+        <div style="font-size: 20px; font-weight: bold; margin-bottom: 15px;">Hi {name}!</div>
         
         <div style="line-height: 1.6; margin-bottom: 20px;">
-           Congratulations! You are halfway through the semester! I hope you are feeling more confident with the coursework and enjoy what you are learning. As your Mentor, part of my role is to help you stay motivated to continue your studies successfully.
-        </div>
-        
-        <div style="line-height: 1.6; margin-bottom: 20px;">
-           If you are feeling a little overwhelmed, I invite you to consider King Benjamin’s advice:
-           <br>
-           “And see that all these things are done in wisdom and order; for it is not requisite that a man should run faster than he has strength. And again, it is expedient that he should be diligent, that thereby he might win the prize; therefore, all things must be done in order.” Mosiah 4:27
+           As your Mentor, I am here to answer any questions you may have about the certificate selection process and help you meet your educational/career goals. I am sending you the following survey to see how you feel about your certificate selection. 
         </div>
 
         <div style="line-height: 1.6; margin-bottom: 20px;">
-            Here are two principles that can help you use “wisdom and order”:
-            <ol>
-                <li>Remember your "WHY":  Post or hang a picture that helps you remember and feel excited about why you are doing BYU-Pathway.</li>
+            Which of the following options applies to you? :
+            <ul>
+                <li>A. I am confident in the certificate I have chosen.</li>
 
-                <li>Counsel with the Lord through prayer. The Lord knows everything you are experiencing! As you rely on Him, He can show you the way to accomplish what He is asking you to do (1 Nephi 3:7).</li>
-            </ol>
-             Whatever challenge you may be facing, please know that I am here to support your efforts. What can I pray for on your behalf?
+                <li>B. I am not confident that I chose the right certificate and want to know more about the certificate I chose. </li>
+
+                <li>C. I am not confident in my certificate and I might choose another certificate.</li>
+
+                <li>D. I have not chosen a certificate.</li>
+
+                <li>E. I do not fully understand what a certificate is.</li>
+            </ul>
+             Please respond with the letter that best applies to your situation. If you are struggling to choose a certificate or have any questions, I would love to talk with you about this or any other challenges you may be facing. 
         </div>   
 
 
         <div style="line-height: 1.6; margin-bottom: 20px;">
-          <b>Succeed With Smart Goals!</b> <br>
-          Start the term off right by creating some new SMART goals! Simply follow the steps below, regularly evaluate how things are going, and adjust if necessary.
-          <img src="https://mktdplp102wuda.azureedge.net/org-e59284a505b84d27bcc99cfe9ec003e9/07b310af-8a15-ec11-b6e6-000d3a3002e5/41kGBDO57KypFYBJt_D6ac8oZShEu18Y65joCOTM4tw!" alt="smart goals" style="width: 100%;">
+          <b>5 TIPS FOR CHOOSING A CERTIFICATE</b> <br>
+          Follow these suggestions from fellow students to find the best certificate for you!
+          <br><br>
+          <a href="https://blog.pathwaynewsroom.org/2020/10/5-tips-choosing-a-certificate/" style="width: 70px; height: 30px; padding: 20px 10px; border: #f7f7f7 solid; margin: 20px 0; background-color: #f7f7f7;"> Tips for Choosing a certificate </a>
+          <br><br>
         </div>
 
         
@@ -72,9 +74,9 @@ if __name__ == "__main__":
         </div>
         
         <div style="line-height: 1.6; margin: 20px 0;">
-            Did you know that BYU-Pathway has tutoring services?
+            Find what Program is best for you to take this coming semester!
             <br>
-            <a href="https://www.byui.edu/tutoring-center/online-tutoring" target="_blank">Click Here to Find A Tutor</a>
+            <a href="https://www.byupathway.edu/degrees/program-list" target="_blank">>>Degree List<<</a>
         </div>
 
         <div style="font-weight: bold;">
